@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+  <h1>Hello, world!</h1>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+    
+    // Horizontal gradient, from left to right
+//
+// Creates two color stops, start and end, by specifying a color and position for each color stop.
+@mixin gradient-x($start-color: $gray-700, $end-color: $gray-800, $start-percent: 0%, $end-percent: 100%) {
+  background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
+}
+
+// Vertical gradient, from top to bottom
+//
+// Creates two color stops, start and end, by specifying a color and position for each color stop.
+@mixin gradient-y($start-color: $gray-700, $end-color: $gray-800, $start-percent: null, $end-percent: null) {
+  background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent);
+}
+
+@mixin gradient-directional($start-color: $gray-700, $end-color: $gray-800, $deg: 45deg) {
+  background-image: linear-gradient($deg, $start-color, $end-color);
+}
+
+@mixin gradient-x-three-colors($start-color: $blue, $mid-color: $purple, $color-stop: 50%, $end-color: $red) {
+  background-image: linear-gradient(to right, $start-color, $mid-color $color-stop, $end-color);
+}
+
+@mixin gradient-y-three-colors($start-color: $blue, $mid-color: $purple, $color-stop: 50%, $end-color: $red) {
+  background-image: linear-gradient($start-color, $mid-color $color-stop, $end-color);
+}
+
+@mixin gradient-radial($inner-color: $gray-700, $outer-color: $gray-800) {
+  background-image: radial-gradient(circle, $inner-color, $outer-color);
+}
+
+@mixin gradient-striped($color: rgba($white, .15), $angle: 45deg) {
+  background-image: linear-gradient($angle, $color 25%, transparent 25%, transparent 50%, $color 50%, $color 75%, transparent 75%, transparent);
+}
+   
+</body>
+</html>
