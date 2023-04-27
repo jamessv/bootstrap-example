@@ -15,39 +15,28 @@
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
     
-    // Horizontal gradient, from left to right
-//
-// Creates two color stops, start and end, by specifying a color and position for each color stop.
-@mixin gradient-x($start-color: $gray-700, $end-color: $gray-800, $start-percent: 0%, $end-percent: 100%) {
-  background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
-}
-
-// Vertical gradient, from top to bottom
-//
-// Creates two color stops, start and end, by specifying a color and position for each color stop.
-@mixin gradient-y($start-color: $gray-700, $end-color: $gray-800, $start-percent: null, $end-percent: null) {
-  background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent);
-}
-
-@mixin gradient-directional($start-color: $gray-700, $end-color: $gray-800, $deg: 45deg) {
-  background-image: linear-gradient($deg, $start-color, $end-color);
-}
-
-@mixin gradient-x-three-colors($start-color: $blue, $mid-color: $purple, $color-stop: 50%, $end-color: $red) {
-  background-image: linear-gradient(to right, $start-color, $mid-color $color-stop, $end-color);
-}
-
-@mixin gradient-y-three-colors($start-color: $blue, $mid-color: $purple, $color-stop: 50%, $end-color: $red) {
-  background-image: linear-gradient($start-color, $mid-color $color-stop, $end-color);
-}
-
-@mixin gradient-radial($inner-color: $gray-700, $outer-color: $gray-800) {
-  background-image: radial-gradient(circle, $inner-color, $outer-color);
-}
-
-@mixin gradient-striped($color: rgba($white, .15), $angle: 45deg) {
-  background-image: linear-gradient($angle, $color 25%, transparent 25%, transparent 50%, $color 50%, $color 75%, transparent 75%, transparent);
-}
-   
+    <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+    <div class="p-3 mb-2 bg-primary-subtle text-emphasis-primary">.bg-primary-subtle</div>
+    <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+    <div class="p-3 mb-2 bg-secondary-subtle text-emphasis-secondary">.bg-secondary-subtle</div>
+    <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+    <div class="p-3 mb-2 bg-success-subtle text-emphasis-success">.bg-success-subtle</div>
+    <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+    <div class="p-3 mb-2 bg-danger-subtle text-emphasis-danger">.bg-danger-subtle</div>
+    <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+    <div class="p-3 mb-2 bg-warning-subtle text-emphasis-warning">.bg-warning-subtle</div>
+    <div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
+    <div class="p-3 mb-2 bg-info-subtle text-emphasis-info">.bg-info-subtle</div>
+    <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+    <div class="p-3 mb-2 bg-light-subtle text-emphasis-light">.bg-light-subtle</div>
+    <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+    <div class="p-3 mb-2 bg-dark-subtle text-emphasis-dark">.bg-dark-subtle</div>
+    <p class="p-3 mb-2 bg-body-secondary">.bg-body-secondary</p>
+    <p class="p-3 mb-2 bg-body-tertiary">.bg-body-tertiary</p>
+    
+    <div class="p-3 mb-2 bg-body text-body">.bg-body</div>
+    <div class="p-3 mb-2 bg-black text-white">.bg-black</div>
+    <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+    <div class="p-3 mb-2 bg-transparent text-body">.bg-transparent</div>
 </body>
 </html>
